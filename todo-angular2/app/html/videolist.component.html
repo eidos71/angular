@@ -1,0 +1,21 @@
+<b>Video list Component</b>
+<br>
+<table class="table">
+    <thead>
+    <tr>
+        <th></th>
+        <th>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="#aVideo	of	videos" (click)="onSelect(aVideo)">
+        <td>
+            {{aVideo.id}}
+        </td>
+        <td>
+            {{aVideo.title}}
+        </td>
+    </tr>
+    </tbody>
+</table>
